@@ -522,6 +522,133 @@ const reflectionData: ReflectionData[] = [
   },
 
   // page 9
+  {
+    title: "Will Ketamine Show Up On My Drug Test",
+    slug: "will-ketamine-show-up-on-my-drug-test",
+    imageUrl: "https://images.prismic.io/innerwell/Zp-uLR5LeNNTxbO-_pexels-mediocrememories-954585.jpg?auto=format%2Ccompress&rect=0%2C0%2C3456%2C3456&w=3456&h=3456&w=1200&q=75",
+    alt: "Drug testing and ketamine therapy",
+    author: "Anthony Mangia",
+    publishDate: "2024-07-21",
+    wordCount: "N/A"
+  },
+  {
+    title: "What to know if you're nervous about your first Ketamine experience",
+    slug: "what-to-know-nervous-ketamine-experience",
+    imageUrl: "https://images.prismic.io/innerwell/659c21df531ac2845a273802_pexels-alex-green-5699741.jpg?auto=format,compress&w=1200&q=75",
+    alt: "First ketamine therapy experience guidance",
+    author: "Ben Medrano, MD",
+    publishDate: "2024-01-03",
+    wordCount: "N/A"
+  },
+  {
+    title: "How we keep you safe at Innerwell",
+    slug: "how-we-keep-you-safe-at-innerwell",
+    imageUrl: "https://images.prismic.io/innerwell/aIuuGqTt2nPbZnkH_pexels-louis-bauer-79024-249348.jpg?auto=format,compress&w=1200&q=75",
+    alt: "Safety at innerwell therapy",
+    author: "Ben Medrano, MD",
+    publishDate: "2024-01-02",
+    wordCount: "N/A"
+  },
+  {
+    title: "In Memoriam: Dr. Garrett Deckel",
+    slug: "in-memoriam-dr.-garrett-deckel",
+    imageUrl: "https://images.prismic.io/innerwell/d0a32a6c-b5e6-413f-bdf8-5e14b035bcac_garrett_deckel_memoriam.jpg?auto=compress,format&w=1200&q=75",
+    alt: "Dr. Garrett Deckel memorial tribute",
+    author: "Innerwell Team",
+    publishDate: "2023-10-18",
+    wordCount: "N/A"
+  },
+  {
+    title: "Innerwell Reviews from Real Patients",
+    slug: "innerwell-reviews",
+    imageUrl: "https://images.prismic.io/innerwell/e930b27d-93ca-4258-80de-c7b82515102c_customer-quote.jpg?auto=compress,format&w=1200&q=75",
+    alt: "Patient reviews and testimonials",
+    author: "Anthony Mangia",
+    publishDate: "2023-06-22",
+    wordCount: "N/A"
+  },
+  {
+    title: "135 Intention Setting Examples for Ketamine Therapy",
+    slug: "135-intention-setting-examples-for-ketamine-therapy",
+    imageUrl: "https://images.prismic.io/innerwell/d66efb2e-007e-475b-9e82-4ca62876e14c_pexels-jayr-alvarez-4115782%2B%25281%2529.jpeg?auto=compress,format&w=1200&q=75",
+    alt: "Intention setting examples for ketamine therapy",
+    author: "Anthony Mangia",
+    publishDate: "2023-06-14",
+    wordCount: "N/A"
+  },
+  {
+    title: "WEBINAR: Online Ketamine Therapy 101 with Dr. Mike Cooper",
+    slug: "online-ketamine-therapy-101",
+    imageUrl: "https://images.prismic.io/innerwell/464e0f38-78cb-4c13-b7a7-9e334bbea589_webinar_thumbnail1%2B%25284%2529.png?auto=compress,format&w=1200&q=75",
+    alt: "Online ketamine therapy webinar with Dr. Mike Cooper",
+    author: "Anthony Mangia",
+    publishDate: "2023-06-02",
+    wordCount: "N/A"
+  },
+  // page 10
+  {
+    title: "A Guide to Intention Setting For Ketamine Treatment",
+    slug: "ketamine-intention-setting",
+    imageUrl: "https://images.prismic.io/innerwell/8f9bf787-fc0d-49f4-b95d-891dff64cdea_intention-setting-ketamine.jpeg?auto=compress,format&w=1200&q=75",
+    alt: "Intention setting is critical for ketamine treatment.",
+    author: "Anthony Mangia",
+    publishDate: "2023-04-12",
+    wordCount: "N/A"
+  },
+  {
+    title: "The Benefits of At-Home Ketamine Therapy vs In-Person Clinics",
+    slug: "benefits-of-at-home-ketamine-therapy-vs-in-person",
+    imageUrl: "https://images.prismic.io/innerwell/aIuyxKTt2nPbZnqN_pexels-polina-kovaleva-6541177.jpg?auto=format,compress&w=1200&q=75",
+    alt: "At-home vs in-person ketamine therapy comparison",
+    author: "Anthony Mangia",
+    publishDate: "2023-04-10",
+    wordCount: "N/A"
+  },
+  {
+    title: "Low Cost Ketamine Treatment - What You Should Know",
+    slug: "low-cost-ketamine-treatment",
+    imageUrl: "https://images.prismic.io/innerwell/76f91edd-1ce2-41f6-92e4-4a4f47bcc27f_low-cost-ketamine-treatment.jpeg?auto=compress,format&w=1200&q=75",
+    alt: "Low cost ketamine treatment - why you shouldn't always choose the cheapest ketamine provider",
+    author: "Anthony Mangia",
+    publishDate: "2023-03-23",
+    wordCount: "N/A"
+  },
+  {
+    title: "How to Prepare for Your Ketamine Experience",
+    slug: "how-to-prepare-for-ketamine-experience",
+    imageUrl: "https://images.prismic.io/innerwell/ac9731e7-3683-4623-a0f5-1fb9de8e744c_how-to-prepare-ketamine-experience.jpeg?auto=compress,format&w=1200&q=75",
+    alt: "Preparing for ketamine therapy experience",
+    author: "Nate Macanian",
+    publishDate: "2023-01-16",
+    wordCount: "N/A"
+  },
+  {
+    title: "How do I interact with my therapist during my ketamine experience?",
+    slug: "how-do-i-interact-with-my-therapist",
+    imageUrl: "https://images.prismic.io/innerwell/aIuxpaTt2nPbZnnP_pexels-mart-production-7699500.jpg?auto=format,compress&w=1200&q=75",
+    alt: "Therapist interaction during ketamine therapy",
+    author: "Nate Macanian",
+    publishDate: "2023-01-10",
+    wordCount: "N/A"
+  },
+  {
+    title: "Dispelling the stigma around psychedelics",
+    slug: "dispelling-stigma-psychedelics",
+    imageUrl: "https://images.prismic.io/innerwell/51d344de-05eb-43ba-8218-76c25a28ebec_pexels-juan-pablo-serrano-arenas-1101726.jpg?auto=compress,format&w=1200&q=75",
+    alt: "Addressing psychedelic stigma and misconceptions",
+    author: "Nate Macanian",
+    publishDate: "2023-01-05",
+    wordCount: "N/A"
+  },
+  {
+    title: "Ketamine for Anxiety",
+    slug: "ketamine-for-anxiety",
+    imageUrl: "https://images.prismic.io/innerwell/2c40db08-47a7-45e2-801d-83a7644f1d18_pexels-m-venter-1659437.jpg?auto=compress,format&w=1200&q=75",
+    alt: "Ketamine therapy for anxiety treatment",
+    author: "Anthony Mangia",
+    publishDate: "2023-01-02",
+    wordCount: "N/A"
+  }
 ];
 
 export default function Home() {
