@@ -390,7 +390,138 @@ const reflectionData: ReflectionData[] = [
     author: "Innerwell Team",
     publishDate: "2025-03-27",
     wordCount: "N/A"
-  }
+  },
+  // page 7
+  {
+    title: "Understanding Ketamine Therapy for Pain Management",
+    slug: "ketamine-therapy-for-pain-management",
+    imageUrl: "https://images.prismic.io/innerwell/aBjqH_IqRLdaB4K0_pexels-kindelmedia-7298882-2-.jpg?auto=format,compress&w=1200&q=75",
+    alt: "Ketamine therapy for pain management",
+    author: "Innerwell Team",
+    publishDate: "2025-03-20",
+    wordCount: "N/A"
+  },
+  {
+    title: "Understanding Treatment-Resistant Depression: When the Usual Approaches Don't Stick",
+    slug: "understanding-treatment-resistant-depression",
+    imageUrl: "https://images.prismic.io/innerwell/aBueZidWJ-7kRuJ1_pexels-olly-3772618-1--1-.jpg?auto=format,compress&w=1200&q=75",
+    alt: "Treatment-resistant depression understanding",
+    author: "Innerwell Team",
+    publishDate: "2025-03-13",
+    wordCount: "N/A"
+  },
+  {
+    title: "Exploring Ketamine Therapy for Chronic Pain: Benefits, Safety, and the Healing Journey",
+    slug: "ketamine-therapy-for-chronic-pain",
+    imageUrl: "https://images.prismic.io/innerwell/aBs_5CdWJ-7kRtBp_pexels-ron-lach-8487215-1-.jpg?auto=format,compress&w=1200&q=75",
+    alt: "Ketamine therapy for chronic pain treatment",
+    author: "Innerwell Team",
+    publishDate: "2025-03-07",
+    wordCount: "N/A"
+  },
+  {
+    title: "Ketamine Therapy for Depression and Anxiety",
+    slug: "ketamine-therapy-for-anxiety-and-depression",
+    imageUrl: "https://images.prismic.io/innerwell/76dd40ae-a229-4314-9ec3-1c3d051f0944_at-home-ketamine-vs-clinic-infusions.jpeg?auto=format,compress&w=1200&q=75",
+    alt: "Ketamine therapy for depression and anxiety",
+    author: "Innerwell Team",
+    publishDate: "2025-03-05",
+    wordCount: "N/A"
+  },
+  {
+    title: "Understanding Ketamine Therapy for Couples",
+    slug: "ketamine-therapy-for-couples",
+    imageUrl: "https://images.prismic.io/innerwell/aBjV7fIqRLdaB4AW_pexels-maksgelatin-5552602-1-.jpg?auto=format,compress&w=1200&q=75",
+    alt: "Ketamine therapy for couples treatment",
+    author: "Innerwell Team",
+    publishDate: "2025-02-28",
+    wordCount: "N/A"
+  },
+  {
+    title: "Understanding Autism and ADHD: Exploring Psychedelic Therapy for Autism and ADHD",
+    slug: "understanding-autism-adhd",
+    imageUrl: "https://images.prismic.io/innerwell/aBtZaSdWJ-7kRtSk_pexels-tara-winstead-8378728.jpg?auto=format,compress&w=1200&q=75",
+    alt: "Psychedelic therapy for autism and ADHD",
+    author: "Innerwell Team",
+    publishDate: "2025-02-07",
+    wordCount: "N/A"
+  },
+  {
+    title: "EMDR Therapy for Family Trauma: Understanding and Healing Generational Wounds",
+    slug: "emdr-therapy-for-family-trauma",
+    imageUrl: "https://images.prismic.io/innerwell/aBto0SdWJ-7kRteg_pexels-vidalbalielojrfotografia-2880897-1-.jpg?auto=format,compress&w=1200&q=75",
+    alt: "EMDR therapy for family trauma and generational healing",
+    author: "Innerwell Team",
+    publishDate: "2025-01-25",
+    wordCount: "N/A"
+  },
+
+  // page 8
+  {
+    title: "Talk Therapy for NPD: Exploring Treatment Paths with Compassion and Clarity",
+    slug: "talk-therapy-for-narcissistic-personality-disorder",
+    imageUrl: "https://images.prismic.io/innerwell/aBs5WidWJ-7kRs-F_1726229251553_pexels-shvets-production-7176325-1-_01J7NMG22BBE2BEZNWVY46CPP9-1-.jpg?auto=format,compress&w=1200&q=75",
+    alt: "Talk therapy for narcissistic personality disorder",
+    author: "Innerwell Team",
+    publishDate: "2025-01-23",
+    wordCount: "N/A"
+  },
+  {
+    title: "Mental Health Statistics in 2025: What the Numbers Really Say",
+    slug: "mental-health-statistics",
+    imageUrl: "https://images.prismic.io/innerwell/aBtsDSdWJ-7kRtlC_pexels-fauxels-3183153.jpg?auto=format,compress&w=1200&q=75",
+    alt: "Mental health statistics and data analysis",
+    author: "Innerwell Team",
+    publishDate: "2025-01-16",
+    wordCount: "N/A"
+  },
+  {
+    title: "Understanding Abandonment Issues",
+    slug: "emdr-therapy-for-abandonment-issues",
+    imageUrl: "https://images.prismic.io/innerwell/aBtBHCdWJ-7kRtCG_1739272984382_pexels-liza-summer-6382487_01JKTBZ62J9TBXM8B7SRZPV08T.jpg?auto=format,compress&w=1200&q=75",
+    alt: "Understanding and healing abandonment issues",
+    author: "Innerwell Team",
+    publishDate: "2025-01-15",
+    wordCount: "N/A"
+  },
+  {
+    title: "A Companion for Your Ketamine-Assisted Therapy: The Role of a Sitter",
+    slug: "how-to-find-a-sitter",
+    imageUrl: "https://images.prismic.io/innerwell/Zw93M4F3NbkBXfe2_pexels-cottonbro-5486098.jpg?auto=format,compress&w=1200&q=75",
+    alt: "Ketamine therapy sitter and support companion",
+    author: "Anthony Mangia",
+    publishDate: "2024-10-17",
+    wordCount: "N/A"
+  },
+  {
+    title: "Clinician Spotlight: Dr. Ben Medrano",
+    slug: "ben-medrano-blog-post",
+    imageUrl: "https://images.prismic.io/innerwell/Zp9KIx5LeNNTxaYK_BenSquarePeachBackground.jpg?auto=format,compress&w=1200&q=75",
+    alt: "Dr. Ben Medrano clinician spotlight",
+    author: "Innerwell Team",
+    publishDate: "2024-10-01",
+    wordCount: "N/A"
+  },
+  {
+    title: "Ketamine Integration - The Complete Guide",
+    slug: "ketamine-integration-guide",
+    imageUrl: "https://images.prismic.io/innerwell/83f2d996-c6b5-4e18-9ace-918bb325c4ed_psychedelic_integration_therapy.jpg?auto=format,compress&w=1200&q=75",
+    alt: "Woman meeting psychotherapist for ketamine integration session",
+    author: "Anthony Mangia",
+    publishDate: "2024-08-27",
+    wordCount: "N/A"
+  },
+  {
+    title: "Ketamine Integration Exercises: How to Practice Them and Their Benefits",
+    slug: "ketamine-integration-exercises",
+    imageUrl: "https://images.prismic.io/innerwell/Zs3gAEaF0TcGJbfz_1719479292419_pexels-kindelmedia-7938556_01J1CF7MZSVQVE5A1NNHGK7D9H.jpg?auto=format%2Ccompress&rect=0%2C0%2C4000%2C3843&w=4000&h=3843&w=1200&q=75",
+    alt: "Exercises like meditation can help you integrate the insights and breakthroughs you've had in ketamine therapy",
+    author: "Anthony Mangia",
+    publishDate: "2024-08-26",
+    wordCount: "N/A"
+  },
+
+  // page 9
 ];
 
 export default function Home() {
