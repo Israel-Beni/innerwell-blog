@@ -58,12 +58,12 @@ export function ReflectionCard({ reflection }: ReflectionCardProps) {
           {reflection.slug}
         </div>
         
-        <div className="mt-4 text-xs text-gray-500">
+        {/* <div className="mt-4 text-xs text-gray-500">
           <span className="font-medium">Image URL:</span>
           <div className="mt-1 text-blue-600 break-all">
             {reflection.imageUrl}
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
