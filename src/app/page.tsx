@@ -1,103 +1,475 @@
-import Image from "next/image";
+'use client';
+
+import { useState, useEffect } from 'react';
+import { ReflectionCard } from '@/components/ReflectionCard';
+import {FilterPanel} from '@/components/FilterPanel';
+import { ReflectionData } from '@/types/reflection';
+import "./globals.css";
+
+const reflectionData: ReflectionData[] = [
+  {
+    title: "We Weren't Meant to Live Like This: Modern Life and the Rise of Emotional Exhaustion",
+    slug: "emotional-exhaustion",
+    imageUrl: "https://images.prismic.io/innerwell/aEdPubh8WN-LV6Rm_pexels-arthousestudio-4558326.jpg?auto=format,compress&w=1200&q=75",
+    alt: "Modern Life and Emotional Exhaustion",
+    author: "Innerwell Team",
+    publishDate: "2025-07-30",
+    wordCount: "N/A"
+  },
+  {
+    title: "Why Joy Can Feel Scary: Learning to Hold the Good Without the Crash",
+    slug: "fear-of-happiness",
+    imageUrl: "https://images.unsplash.com/photo-1545315003-c5ad6226c272?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNXx8aGFwcHl8ZW58MHx8fHwxNzUyMzEzOTEwfDA&ixlib=rb-4.1.0&q=85&w=1200&q=75",
+    alt: "woman in green jacket raising her hands",
+    author: "Innerwell Team",
+    publishDate: "2025-07-30",
+    wordCount: "N/A"
+  },
+  {
+    title: "Is Emotional Fluency the New Intelligence?",
+    slug: "emotional-awareness",
+    imageUrl: "https://images.unsplash.com/photo-1570840934347-4dc56c98b8ef?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMnx8am95ZnVsfGVufDB8fHx8MTc1MzkyMzY3OXww&ixlib=rb-4.1.0&q=85&w=1200&q=75",
+    alt: "smiling woman",
+    author: "Innerwell Team",
+    publishDate: "2025-07-30",
+    wordCount: "N/A"
+  },
+  {
+    title: "Bridging the Divide: Managing Anxiety in an Era of Political Polarization",
+    slug: "political-anxiety",
+    imageUrl: "https://images.unsplash.com/photo-1577998555981-6e798325914e?dpr=1&fit=max&auto=compress%2Cformat",
+    alt: "woman punching the air during golden hour",
+    author: "Innerwell Team",
+    publishDate: "2025-07-30",
+    wordCount: "N/A"
+  },
+  {
+    title: "The Loneliness You Can't See: High-Functioning Anxiety in a Social World",
+    slug: "high-functioniong-anxiety",
+    imageUrl: "https://images.unsplash.com/photo-1527137342181-19aab11a8ee8?dpr=1&fit=max&auto=compress%2Cformat",
+    alt: "woman sitting on black chair in front of glass-panel window with white curtains",
+    author: "Innerwell Team",
+    publishDate: "2025-07-30",
+    wordCount: "N/A"
+  },
+  {
+    title: "Emotional Regulation Is a Skill—Not a Personality Trait",
+    slug: "emotional-regulation-skills",
+    imageUrl: "https://images.unsplash.com/photo-1541258165115-f6c9b1db3669?dpr=1&fit=max&auto=compress%2Cformat",
+    alt: "a blurry photo of a woman with her hands on her face",
+    author: "Innerwell Team",
+    publishDate: "2025-07-30",
+    wordCount: "N/A"
+  },
+  {
+    title: "Can You Get Seasonal Depression in the Summer? Understanding the Summer Blues",
+    slug: "can-you-get-seasonal-depression-in-the-summer",
+    imageUrl: "https://helloinnerwell.com/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Finnerwell%2F659c208e531ac2845a2737f3_pexels-marcelo-chagas-2437901.jpg%3Fauto%3Dformat%2Ccompress&w=1920&q=75",
+    alt: "Summer Depression and Seasonal Affective Disorder",
+    author: "Innerwell Team",
+    publishDate: "2025-07-23",
+    wordCount: "N/A"
+  },
+  // page 2
+  {
+    title: "Couples Therapy vs Individual Therapy: Which Is Best for You?",
+    slug: "couples-therapy-vs-individual-therapy",
+    imageUrl: "https://images.unsplash.com/photo-1604881990409-b9f246db39da?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHxjb3VwbGUlMjB0aGVyYXB5fGVufDB8fHx8MTc1Mzk4MTgxN3ww&ixlib=rb-4.1.0&q=85&w=1200&q=75",
+    alt: "person in black long sleeve shirt holding white ceramic mug",
+    author: "Innerwell Team",
+    publishDate: "2025-07-23",
+    wordCount: "N/A"
+  },
+  {
+    title: "Can Stress and Anxiety Cause Body Aches? Here's What You Need to Know",
+    slug: "can-stress-and-anxiety-cause-body-aches",
+    imageUrl: "https://images.unsplash.com/photo-1596107034181-9f168717f1ee?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxhY25lfGVufDB8fHx8MTc1Mzk4MjE0M3ww&ixlib=rb-4.1.0&q=85&w=1200&q=75",
+    alt: "woman in gold hoop earrings",
+    author: "Innerwell Team",
+    publishDate: "2025-07-16",
+    wordCount: "N/A"
+  },
+  {
+    title: "The Hidden Impact of Chronic Pain on Emotional Well-Being",
+    slug: "hidden-impact-of-chronic-pain",
+    imageUrl: "https://images.unsplash.com/photo-1606677549026-762050b1e7ca?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMnx8cGFpbnxlbnwwfHx8fDE3NTM5ODIzNTV8MA&ixlib=rb-4.1.0&q=85&w=1200&q=75",
+    alt: "woman in white dress shirt",
+    author: "Innerwell Team",
+    publishDate: "2025-07-16",
+    wordCount: "N/A"
+  },
+  {
+    title: "Mental Health Stigma Is Still Holding People Back—Let's Talk About It",
+    slug: "mental-health-stigma",
+    imageUrl: "https://images.unsplash.com/photo-1620504155085-d7b152a58e77?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNnx8YWxvbmV8ZW58MHx8fHwxNzUyMjYyNTA2fDA&ixlib=rb-4.1.0&q=85&w=1200&q=75",
+    alt: "woman in black and white dress sitting on concrete stairs",
+    author: "Innerwell Team",
+    publishDate: "2025-07-11",
+    wordCount: "N/A"
+  },
+  {
+    title: "The Quiet Epidemic: Emotional Numbness",
+    slug: "emotional-numbness",
+    imageUrl: "https://images.prismic.io/innerwell/51d344de-05eb-43ba-8218-76c25a28ebec_pexels-juan-pablo-serrano-arenas-1101726.jpg?auto=format,compress&w=1200&q=75",
+    alt: "Woman alone looking through the glass of the window",
+    author: "Innerwell Team",
+    publishDate: "2025-07-11",
+    wordCount: "N/A"
+  },
+  {
+    title: "Ketamine Therapy for Anxiety: A Promising Treatment",
+    slug: "ketamine-therapy-for-anxiety",
+    imageUrl: "https://images.prismic.io/innerwell/60fb58e3-49bf-401d-a5aa-1f94dbf23ac9_de-Innerwell_r1_03A_2962.jpg?auto=format,compress&w=1200&q=75",
+    alt: "Woman in Innerwell keratine therapy session",
+    author: "Innerwell Team",
+    publishDate: "2025-06-16",
+    wordCount: "N/A"
+  },
+  {
+    title: "Finding Support: Online Therapy for Trauma",
+    slug: "finding-support-online-therapy-for-trauma",
+    imageUrl: "https://images.prismic.io/innerwell/030aeb6c-317b-4732-b809-cd9088499723_therapy_resized.jpg?auto=format,compress&w=1200&q=75",
+    alt: "Online therapy session",
+    author: "Innerwell Team",
+    publishDate: "2025-06-16",
+    wordCount: "N/A"
+  },
+  // page 3
+  {
+    title: "Veterans Psychedelic Therapy: Healing Our Heroes",
+    slug: "veterans-psychedelic-therapy-healing-our-heroes",
+    imageUrl: "https://images.prismic.io/innerwell/aEhHfrh8WN-LV8Lr_pexels-rdne-7467846.jpg?auto=format,compress&w=1200&q=75",
+    alt: "Veterans smiling in a therapy session",
+    author: "Innerwell Team",
+    publishDate: "2025-06-16",
+    wordCount: "N/A"
+  },
+  {
+    title: "Finding Relief: Online Therapy for Anxiety",
+    slug: "finding-relief-online-therapy-for-anxiety",
+    imageUrl: "https://images.prismic.io/innerwell/aEdRxLh8WN-LV6SZ_pexels-olly-3756168.jpg?auto=format,compress&w=1200&q=75",
+    alt: "Joyous and stress-free woman with arms open wide, gazing up in an olive field",
+    author: "Innerwell Team",
+    publishDate: "2025-06-16",
+    wordCount: "N/A"
+  },
+  {
+    title: "Finding Relief: Online Therapy for Obsessive Compulsive Disorder",
+    slug: "finding-relief-online-therapy-for-obsessive-compulsive-disorder",
+    imageUrl: "https://images.prismic.io/innerwell/aBucOCdWJ-7kRuI7_pexels-ketut-subiyanto-4474047.jpg?auto=format,compress&w=1200&q=75",
+    alt: "Joyous woman taking note while viewing her laptop",
+    author: "Innerwell Team",
+    publishDate: "2025-06-16",
+    wordCount: "N/A"
+  },
+  {
+    title: "EMDR Therapy for PTSD in Veterans: Healing the Invisible Wounds",
+    slug: "emdr-therapy-for-ptsd-in-veterans-healing-the-invisible-wounds",
+    imageUrl: "https://images.prismic.io/innerwell/aEhHf7h8WN-LV8Lt_pexels-rdne-7467908.jpg?auto=format,compress&w=1200&q=75",
+    alt: "A smiling senior-aged soldier in therapy",
+    author: "Innerwell Team",
+    publishDate: "2025-06-16",
+    wordCount: "N/A"
+  },
+  {
+    title: "Healing PTSD with Psychedelic Therapy for PTSD",
+    slug: "healing-ptsd-with-psychedelic-therapy-for-ptsd",
+    imageUrl: "https://images.prismic.io/innerwell/aBtBGSdWJ-7kRtCE_1736444017788_pexels-pavel-danilyuk-6549198_01JH621ZB2EDPXJZHR9RR788TH.jpg?auto=format,compress&w=1200&q=75",
+    alt: "A calm man seated and looking outside through the window glass",
+    author: "Innerwell Team",
+    publishDate: "2025-06-16",
+    wordCount: "N/A"
+  },
+  {
+    title: "Finding Freedom: Online Therapy for Agoraphobia",
+    slug: "finding-freedom-online-therapy-for-agoraphobia",
+    imageUrl: "https://images.prismic.io/innerwell/c8f8ba8c-c4f9-4156-864d-2fe2e4eec9e8_c5545a5a-13ee-4e8d-b916-5eb16fdd6e58_blog-post-women-laughing.jpg?auto=format,compress&w=1200&q=75",
+    alt: "Women laughing and getting some sun",
+    author: "Innerwell Team",
+    publishDate: "2025-06-16",
+    wordCount: "N/A"
+  },
+  {
+    title: "Healing Social Anxiety with Ketamine Therapy",
+    slug: "healing-social-anxiety-with-ketamine-therapy",
+    imageUrl: "https://images.prismic.io/innerwell/581f9e8a-c1f0-47bd-8158-e24e1691e682_45-Innerwell_r1_03A_2886-high-res.png?auto=format,compress&w=1200&q=75",
+    alt: "Woman in Innerwell ketamine therapy session",
+    author: "Innerwell Team",
+    publishDate: "2025-06-16",
+    wordCount: "N/A"
+  },
+  // page 4
+  {
+    title: "What Is Psychedelic Integration Therapy",
+    slug: "what-is-psychedelic-integration-therapy",
+    imageUrl: "https://images.prismic.io/innerwell/aEcbDLh8WN-LV5_B_1677595472985_db-Innerwell_r1_03A_2933-1-_01GTC7PXARNFJ238359DS9AZTC-1-.jpg?auto=format,compress&w=1200&q=75",
+    alt: "Psychedelic integration therapy session",
+    author: "Innerwell Team",
+    publishDate: "2025-06-10",
+    wordCount: "N/A"
+  },
+  {
+    title: "What is Ketamine Therapy",
+    slug: "what-is-ketamine-therapy",
+    imageUrl: "https://images.prismic.io/innerwell/a368da64-e9d4-416d-bbf5-6c7c66019c4e_Ketamine%2B101.webp?auto=compress,format&w=1200&q=75",
+    alt: "Ketamine",
+    author: "Innerwell Team",
+    publishDate: "2025-06-10",
+    wordCount: "N/A"
+  },
+  {
+    title: "What Is Psychiatric Therapy? Professional Mental Healthcare Support",
+    slug: "what-is-psychiatric-therapy",
+    imageUrl: "https://images.prismic.io/innerwell/aEdOM7h8WN-LV6Qu_e1-Innerwell_r1_03A_2972-1-.png?auto=format,compress&w=1200&q=75",
+    alt: "Professional psychiatric therapy session",
+    author: "Innerwell Team",
+    publishDate: "2025-06-09",
+    wordCount: "N/A"
+  },
+  {
+    title: "What Is EMDR Therapy?",
+    slug: "what-is-emdr-therapy",
+    imageUrl: "https://images.prismic.io/innerwell/aEdO8Lh8WN-LV6RE_pexels-annakester-5351741.jpg?auto=format,compress&w=1200&q=75",
+    alt: "EMDR therapy session",
+    author: "Innerwell Team",
+    publishDate: "2025-06-08",
+    wordCount: "N/A"
+  },
+  {
+    title: "How to Stop an Anxiety Attack in the Heat of Summer",
+    slug: "how-to-stop-anxiety-attack-in-the-heat-of-summer",
+    imageUrl: "https://images.prismic.io/innerwell/Zw93TYF3NbkBXffC_pexels-mentalhealthamerica-5543374.jpg?auto=format,compress&w=1200&q=75",
+    alt: "Summer anxiety management",
+    author: "Innerwell Team",
+    publishDate: "2025-06-07",
+    wordCount: "N/A"
+  },
+  {
+    title: "The Ultimate Guide to Talk Therapy: What It Is, How It Works & Who It Helps",
+    slug: "what-is-talk-therapy",
+    imageUrl: "https://images.prismic.io/innerwell/aEdQ0Lh8WN-LV6R5_pexels-mikhail-nilov-8297352.jpg?auto=format,compress&w=1200&q=75",
+    alt: "Talk therapy session",
+    author: "Innerwell Team",
+    publishDate: "2025-06-06",
+    wordCount: "N/A"
+  },
+  {
+    title: "Summer Mental Health: How to Thrive During the Hottest Months",
+    slug: "summer-mental-health",
+    imageUrl: "https://images.prismic.io/innerwell/29f1b17a-acec-47ee-953e-d610f6dec881_2.%2BTuning%2BIn.webp?auto=format,compress&w=1200&q=75",
+    alt: "Summer mental health and wellness",
+    author: "Innerwell Team",
+    publishDate: "2025-06-05",
+    wordCount: "N/A"
+  },
+
+  // page 5
+  {
+    title: "What Does EMDR Therapy Do: 8 Key Mechanisms",
+    slug: "what-does-edmr-therapy-do",
+    imageUrl: "https://images.prismic.io/innerwell/aEdTcLh8WN-LV6TF_pexels-ivan-samkov-4458554.jpg?auto=format,compress&w=1200&q=75",
+    alt: "EMDR therapy mechanisms and process",
+    author: "Innerwell Team",
+    publishDate: "2025-06-04",
+    wordCount: "N/A"
+  },
+  {
+    title: "8 Significant Benefits of EMDR Therapy",
+    slug: "benefits-of-emdr-therapy",
+    imageUrl: "https://images.prismic.io/innerwell/aEdUV7h8WN-LV6TZ_pexels-ivan-samkov-6799971.jpg?auto=format,compress&w=1200&q=75",
+    alt: "EMDR therapy benefits and outcomes",
+    author: "Innerwell Team",
+    publishDate: "2025-06-03",
+    wordCount: "N/A"
+  },
+  {
+    title: "How Does EMDR Work?",
+    slug: "how-does-emdr-work",
+    imageUrl: "https://images.prismic.io/innerwell/Zs3kZ0aF0TcGJbj1_pexels-joaojesusdesign-879178.jpg?auto=format,compress&w=1200&q=75",
+    alt: "EMDR therapy process and methodology",
+    author: "Innerwell Team",
+    publishDate: "2025-06-02",
+    wordCount: "N/A"
+  },
+  {
+    title: "Student Mental Health: Helping Young Adults Navigate the End-of-School Summer Transition",
+    slug: "end-of-school-emotions",
+    imageUrl: "https://images.prismic.io/innerwell/aEdUxbh8WN-LV6Tx_pexels-thiago-1265247-2410573.jpg?auto=format,compress&w=1200&q=75",
+    alt: "Student mental health during summer transition",
+    author: "Innerwell Team",
+    publishDate: "2025-06-02",
+    wordCount: "N/A"
+  },
+  {
+    title: "EMDR Therapy for Depression and Anxiety: Understanding a New Path to Healing",
+    slug: "emdr-therapy-for-anxiety-and-depression",
+    imageUrl: "https://images.prismic.io/innerwell/aBs5PidWJ-7kRs9__1699969734083_innerwell-free-consultation2_01HF71F5FWECTBXSC8BZNG0VPX.jpg?auto=format,compress&w=1200&q=75",
+    alt: "EMDR therapy for depression and anxiety treatment",
+    author: "Innerwell Team",
+    publishDate: "2025-05-15",
+    wordCount: "N/A"
+  },
+  {
+    title: "Healing Grief with EMDR: An Innovative Therapy for Lasting Peace",
+    slug: "emdr-therapy-for-grief",
+    imageUrl: "https://images.prismic.io/innerwell/aBs5QidWJ-7kRs-A_1718873479645_pexels-kelvin809-810775_01J0TDFQ6BAYCGME3BM63ACM3X.jpg?auto=format,compress&w=1200&q=75",
+    alt: "EMDR therapy for grief and loss",
+    author: "Innerwell Team",
+    publishDate: "2025-05-08",
+    wordCount: "N/A"
+  },
+  {
+    title: "Ketamine Therapy for Veterans: A New Hope in Mental Health Treatment",
+    slug: "ketamine-therapy-for-veterans",
+    imageUrl: "https://images.prismic.io/innerwell/aBjs9_IqRLdaB4Lz_pexels-rdne-7468260.jpg?auto=format,compress&w=1200&q=75",
+    alt: "Ketamine therapy for veterans mental health",
+    author: "Innerwell Team",
+    publishDate: "2025-05-07",
+    wordCount: "N/A"
+  },
+  // page 6
+  {
+    title: "Understanding Trauma: A Journey Through the Brain and Beyond",
+    slug: "psychedelic-therapy-for-trauma",
+    imageUrl: "https://images.prismic.io/innerwell/aBulPydWJ-7kRuPt_pexels-shvetsa-4226119-1-.jpg?auto=format,compress&w=1200&q=75",
+    alt: "Understanding trauma and brain science",
+    author: "Innerwell Team",
+    publishDate: "2025-05-06",
+    wordCount: "N/A"
+  },
+  {
+    title: "Ketamine Therapy for Childhood Trauma: Understanding the Path to Healing",
+    slug: "ketamine-therapy-for-childhood-trauma",
+    imageUrl: "https://images.prismic.io/innerwell/aBs5MSdWJ-7kRs98_1695675190811_kelly-sikkema-beg4vkagLzs-unsplash_01HB71W3KKEYGMQ34FRK46V06G.jpeg?auto=format,compress&w=1200&q=75",
+    alt: "Ketamine therapy for childhood trauma healing",
+    author: "Innerwell Team",
+    publishDate: "2025-05-02",
+    wordCount: "N/A"
+  },
+  {
+    title: "Can Psychedelic Therapy Help with Bipolar Disorder",
+    slug: "psychedelic-therapy-for-bipolar",
+    imageUrl: "https://images.prismic.io/innerwell/aBufDidWJ-7kRuKP_pexels-cottonbro-6763605.jpg?auto=format,compress&w=1200&q=75",
+    alt: "Psychedelic therapy for bipolar disorder",
+    author: "Innerwell Team",
+    publishDate: "2025-04-30",
+    wordCount: "N/A"
+  },
+  {
+    title: "The Science Behind Ketamine Therapy: What the Latest Research Reveals About Treating Depression",
+    slug: "science-behind-ketamine-therapy",
+    imageUrl: "https://images.prismic.io/innerwell/aBujZidWJ-7kRuN5_pexels-edward-jenner-4033148-1-.jpg?auto=format,compress&w=1200&q=75",
+    alt: "Scientific research on ketamine therapy for depression",
+    author: "Innerwell Team",
+    publishDate: "2025-04-29",
+    wordCount: "N/A"
+  },
+  {
+    title: "What PTSD Really Feels Like—And How Healing Begins",
+    slug: "ketamine-therapy-for-ptsd",
+    imageUrl: "https://images.prismic.io/innerwell/aBjpXfIqRLdaB4Kf_pexels-mastercowley-897817.jpg?auto=format,compress&w=1200&q=75",
+    alt: "Understanding PTSD and the healing process",
+    author: "Innerwell Team",
+    publishDate: "2025-04-18",
+    wordCount: "N/A"
+  },
+  {
+    title: "Exploring Talk Therapy for Depression",
+    slug: "talk-therapy-for-depression",
+    imageUrl: "https://images.prismic.io/innerwell/aBucuidWJ-7kRuJD_pexels-karolina-grabowska-4491461.jpg?auto=format,compress&w=1200&q=75",
+    alt: "Talk therapy for depression treatment",
+    author: "Innerwell Team",
+    publishDate: "2025-04-16",
+    wordCount: "N/A"
+  },
+  {
+    title: "Understanding OCD: How Ketamine Therapy Can Offer Support & Healing",
+    slug: "ketamine-therapy-for-ocd",
+    imageUrl: "https://images.prismic.io/innerwell/aBjvAPIqRLdaB4NN_1743590067441_pexels-cottonbro-4553265_01JQV1247NZQABHZ1PAQ6KB121-1-.jpg?auto=format,compress&w=1200&q=75",
+    alt: "Ketamine therapy for OCD treatment and support",
+    author: "Innerwell Team",
+    publishDate: "2025-03-27",
+    wordCount: "N/A"
+  }
+];
 
 export default function Home() {
-  return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+  const [filteredData, setFilteredData] = useState<ReflectionData[]>([]);
+  const [searchTerm, setSearchTerm] = useState('');
+  const [startDate, setStartDate] = useState('');
+  const [endDate, setEndDate] = useState('');
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+  // Sort data by publish date (newest first), then alphabetically
+  const sortedData = reflectionData.sort((a, b) => {
+    const dateComparison = new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime();
+    if (dateComparison === 0) {
+      return a.title.localeCompare(b.title);
+    }
+    return dateComparison;
+  });
+
+  useEffect(() => {
+    const filtered = sortedData.filter(item => {
+      const matchesSearch = !searchTerm || 
+        item.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        item.slug.toLowerCase().includes(searchTerm.toLowerCase());
+      
+      const matchesDate = (!startDate || item.publishDate >= startDate) &&
+                         (!endDate || item.publishDate <= endDate);
+      
+      return matchesSearch && matchesDate;
+    });
+    
+    setFilteredData(filtered);
+  }, [searchTerm, startDate, endDate, sortedData]);
+
+  const clearFilters = () => {
+    setSearchTerm('');
+    setStartDate('');
+    setEndDate('');
+  };
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+      <div className="max-w-7xl mx-auto px-4 py-8">
+        {/* Header */}
+        <div className="text-center mb-12">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Innerwell Reflections
+          </h1>
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            Explore our collection of mental health insights, therapeutic approaches, and personal growth stories.
+          </p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+
+        {/* Filter Panel */}
+        <FilterPanel
+          searchTerm={searchTerm}
+          setSearchTerm={setSearchTerm}
+          startDate={startDate}
+          setStartDate={setStartDate}
+          endDate={endDate}
+          setEndDate={setEndDate}
+          clearFilters={clearFilters}
+          totalCount={sortedData.length}
+          filteredCount={filteredData.length}
+        />
+
+        {/* Content Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {filteredData.length === 0 ? (
+            <div className="col-span-full text-center py-12">
+              <div className="text-gray-500 text-lg">
+                No reflections found matching your criteria.
+              </div>
+            </div>
+          ) : (
+            filteredData.map((reflection) => (
+              <ReflectionCard key={reflection.slug} reflection={reflection} />
+            ))
+          )}
+        </div>
+      </div>
     </div>
   );
 }
