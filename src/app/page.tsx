@@ -211,7 +211,7 @@ const reflectionData: ReflectionData[] = [
   {
     title: "What is Ketamine Therapy",
     slug: "what-is-ketamine-therapy",
-    imageUrl: "https://images.prismic.io/innerwell/a368da64-e9d4-416d-bbf5-6c7c66019c4e_Ketamine%2B101.webp?auto=compress,format&w=1200&q=75",
+    imageUrl: "https://images.prismic.io/innerwell/a368da64-e9d4-416d-bbf5-6c7c66019c4e_Ketamine+101.webp?fit=max&auto=compress%2Cformat",
     alt: "Ketamine",
     author: "Innerwell Team",
     publishDate: "2025-06-10",
@@ -256,7 +256,7 @@ const reflectionData: ReflectionData[] = [
   {
     title: "Summer Mental Health: How to Thrive During the Hottest Months",
     slug: "summer-mental-health",
-    imageUrl: "https://images.prismic.io/innerwell/29f1b17a-acec-47ee-953e-d610f6dec881_2.%2BTuning%2BIn.webp?auto=format,compress&w=1200&q=75",
+    imageUrl: "https://images.prismic.io/innerwell/29f1b17a-acec-47ee-953e-d610f6dec881_2.+Tuning+In.webp?fit=max&auto=compress%2Cformat",
     alt: "Summer mental health and wellness",
     author: "Innerwell Team",
     publishDate: "2025-06-05",
@@ -570,7 +570,7 @@ const reflectionData: ReflectionData[] = [
   {
     title: "135 Intention Setting Examples for Ketamine Therapy",
     slug: "135-intention-setting-examples-for-ketamine-therapy",
-    imageUrl: "https://images.prismic.io/innerwell/d66efb2e-007e-475b-9e82-4ca62876e14c_pexels-jayr-alvarez-4115782%2B%25281%2529.jpeg?auto=compress,format&w=1200&q=75",
+    imageUrl: "https://images.prismic.io/innerwell/d66efb2e-007e-475b-9e82-4ca62876e14c_pexels-jayr-alvarez-4115782+%281%29.jpeg?fit=max&auto=compress%2Cformat",
     alt: "Intention setting examples for ketamine therapy",
     author: "Anthony Mangia",
     publishDate: "2023-06-14",
@@ -579,7 +579,7 @@ const reflectionData: ReflectionData[] = [
   {
     title: "WEBINAR: Online Ketamine Therapy 101 with Dr. Mike Cooper",
     slug: "online-ketamine-therapy-101",
-    imageUrl: "https://images.prismic.io/innerwell/464e0f38-78cb-4c13-b7a7-9e334bbea589_webinar_thumbnail1%2B%25284%2529.png?auto=compress,format&w=1200&q=75",
+    imageUrl: "https://images.prismic.io/innerwell/464e0f38-78cb-4c13-b7a7-9e334bbea589_webinar_thumbnail1+%284%29.png?fit=max&auto=compress%2Cformat",
     alt: "Online ketamine therapy webinar with Dr. Mike Cooper",
     author: "Anthony Mangia",
     publishDate: "2023-06-02",
@@ -647,6 +647,52 @@ const reflectionData: ReflectionData[] = [
     alt: "Ketamine therapy for anxiety treatment",
     author: "Anthony Mangia",
     publishDate: "2023-01-02",
+    wordCount: "N/A"
+  },
+  // page 11
+  {
+    title: "Post-Session Care: What to Do Once Your Psychedelic Experience Has Ended",
+    slug: "post-session-care",
+    imageUrl: "https://images.prismic.io/innerwell/49a84d2d-6f56-4f25-95b7-da0ceced472e_pexels-cottonbro-studio-4047042+%281%29.jpg?fit=max&auto=compress%2Cformat",
+    alt: "Post-session care after psychedelic therapy",
+    author: "Jenn Sinrich",
+    publishDate: "2022-12-30",
+    wordCount: "N/A"
+  },
+  {
+    title: "How to Help Others Journey Safely: A Sitter's Guide",
+    slug: "role-of-a-sitter",
+    imageUrl: "https://images.prismic.io/innerwell/0ee2fd53-2705-4775-9aeb-8133acaeb0f2_priscilla-du-preez-qNH2e3Us0j8-unsplash.jpg?auto=compress,format&w=1200&q=75",
+    alt: "Sitter guide for psychedelic therapy safety",
+    author: "Innerwell Team",
+    publishDate: "2022-12-28",
+    wordCount: "N/A"
+  },
+  {
+    title: "Ketamine 101",
+    slug: "ketamine-101",
+    imageUrl: "https://images.prismic.io/innerwell/aIu0iqTt2nPbZnud_pexels-pixabay-265076.jpg?auto=format,compress&w=1200&q=75",
+    alt: "Ketamine therapy basics and fundamentals",
+    author: "Jenn Sinrich",
+    publishDate: "2022-12-25",
+    wordCount: "N/A"
+  },
+  {
+    title: "Raising The Standard of Care",
+    slug: "what-to-consider-psychedelic-therapy",
+    imageUrl: "https://images.prismic.io/innerwell/aIu1v6Tt2nPbZnxB_pexels-aurelijus-u-2148621102-30711884.jpg?auto=format,compress&w=1200&q=75",
+    alt: "improvement",
+    author: "Innerwell Team",
+    publishDate: "2022-05-25",
+    wordCount: "N/A"
+  },
+  {
+    title: "Meet Innerwell",
+    slug: "meet-innerwell",
+    imageUrl: "https://images.prismic.io/innerwell/dd1c106a-942b-470e-be51-cc9d8564b113_1ada81f8-a169-4ddd-8b12-9deaab3a84da_Innerwell_Opt.jpg?auto=compress,format&w=1200&q=75",
+    alt: "Innerwell team introduction and company overview",
+    author: "Innerwell Team",
+    publishDate: "2022-05-19",
     wordCount: "N/A"
   }
 ];
