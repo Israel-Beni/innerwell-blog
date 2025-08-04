@@ -7,6 +7,34 @@ import { ReflectionData } from '@/types/reflection';
 import "./globals.css";
 
 const reflectionData: ReflectionData[] = [
+  // Latest articles (August 1, 2025)
+  {
+    title: "Before You Fix the Relationship, Heal the Individual",
+    slug: "how-to-work-on-yourself-in-a-relationship",
+    imageUrl: "https://images.prismic.io/innerwell/aBtofSdWJ-7kRteK_pexels-alex-green-5700176.jpg?auto=format,compress&w=1200&q=75",
+    alt: "couple seated on the bed with back turned to each other",
+    author: "Innerwell Team",
+    publishDate: "2025-08-01",
+    wordCount: "N/A"
+  },
+  {
+    title: "Why Summer Can Worsen Body Image—and What You Can Do About It",
+    slug: "body-image-struggles-and-mental-health",
+    imageUrl: "https://images.prismic.io/innerwell/aI8E3KTt2nPbZy-X_1732297792797_pexels-charlotte-may-5965927_01JDAFX86XPDBKKMA93EDJZXCT.jpg?auto=format,compress&w=1200&q=75",
+    alt: "Woman smiling with phone and notebook in hand, and earpiece in hear, look in front of her",
+    author: "Innerwell Team",
+    publishDate: "2025-08-01",
+    wordCount: "N/A"
+  },
+  {
+    title: "Is Online Therapy as Effective as In-Person? Here's What You Need to Know",
+    slug: "is-online-therapy-as-effective-as-in-person",
+    imageUrl: "https://images.prismic.io/innerwell/aJDDDaTt2nPbZ0iV_1698959988528_innerwell-free-consultation_01HE8YG5SCDE05R3JXZX28Y8QK-2-.jpg?dpr=1&fit=max&auto=compress%2Cformat",
+    alt: "woman smiling looking on the computer",
+    author: "Innerwell Team",
+    publishDate: "2025-08-01",
+    wordCount: "N/A"
+  },
   {
     title: "We Weren't Meant to Live Like This: Modern Life and the Rise of Emotional Exhaustion",
     slug: "emotional-exhaustion",
