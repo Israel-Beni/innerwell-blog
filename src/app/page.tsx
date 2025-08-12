@@ -7,6 +7,25 @@ import { ReflectionData } from '@/types/reflection';
 import "./globals.css";
 
 const reflectionData: ReflectionData[] = [
+  // Latest articles (August 12, 2025)
+  {
+    title: "What Is Emotional Safety and How Emotional Boundaries Protect Your Well-Being",
+    slug: "emotional-safety-boundaries",
+    imageUrl: "https://images.unsplash.com/photo-1610457446191-1207fd4c1295?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyNXx8d2VsbC1iZWluZ3xlbnwwfHx8fDE3NTQ5OTEwODF8MA%26ixlib%3Drb-4.1.0%26q%3D85&w=1200&q=75",
+    alt: "woman in black and white stripe dress standing on brown grass field during daytime",
+    author: "Innerwell Team",
+    publishDate: "2025-08-11",
+    wordCount: "N/A"
+  },
+  {
+    title: "Oral Ketamine for Depression and How It’s Changing Mental Health Treatment",
+    slug: "oral-ketamine-for-depression",
+    imageUrl: "https://images.unsplash.com/photo-1525469718471-0e5888a562e8?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyNHx8ZGVwcmVzc2lvbnxlbnwwfHx8fDE3NTQ5OTU2NjV8MA%26ixlib%3Drb-4.1.0%26q%3D85&w=1200&q=75",
+    alt: "woman looking at the floor",
+    author: "Innerwell Team",
+    publishDate: "2025-08-11",
+    wordCount: "N/A"
+  },
   // Latest articles (August 1, 2025)
   {
     title: "Before You Fix the Relationship, Heal the Individual",
