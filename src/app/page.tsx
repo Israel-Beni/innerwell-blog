@@ -7,7 +7,44 @@ import { ReflectionData } from '@/types/reflection';
 import "./globals.css";
 
 const reflectionData: ReflectionData[] = [
-  // Latest articles (August 12, 2025)
+  // Latest articles (August 15, 2025) 
+  {
+    title: "Online Therapy for Veterans: Supporting Those Who Served",
+    slug: "online-therapy-for-veterans",
+    imageUrl: "https://images.unsplash.com/photo-1655841769348-fb2f0ead0216?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyN3x8dmV0ZXJhbnxlbnwwfHx8fDE3NTUyOTg4MjZ8MA%26ixlib%3Drb-4.1.0%26q%3D85&w=1200&q=75",
+    alt: "a man with a beard",
+    author: "Innerwell Team",
+    publishDate: "2025-08-15",
+    wordCount: "N/A"
+  },
+  {
+    title: "Psychedelic Therapy: Transforming Anxiety into Freedom",
+    slug: "psychedelic-therapy-for-anxiety",
+    imageUrl: "https://images.unsplash.com/photo-1543357480-c60d40007a3f?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxM3x8ZnJlZWRvbXxlbnwwfHx8fDE3NTUzMzYyODZ8MA%26ixlib%3Drb-4.1.0%26q%3D85&w=1200&q=75",
+    alt: "a man with a beard",
+    author: "Innerwell Team",
+    publishDate: "2025-08-15",
+    wordCount: "N/A"
+  },
+  {
+    title: "Healing Trauma with Ketamine Therapy for Trauma",
+    slug: "ketamine-therapy-for-trauma",
+    imageUrl: "https://images.unsplash.com/photo-1701303804022-c8ad0fabdd21?dpr=1&fit=max&auto=compress%2Cformat",
+    alt: "a man with a beard",
+    author: "Innerwell Team",
+    publishDate: "2025-08-15",
+    wordCount: "N/A"
+  },
+  {
+    title: "How EMDR Therapy Can Unlock Restful Sleep and Conquer Insomnia",
+    slug: "emdr-therapy-for-insomnia",
+    imageUrl: "https://images.unsplash.com/photo-1517898717281-8e4385a41802?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw4fHxpbnNvbW5pYXxlbnwwfHx8fDE3NTUzMzc2MjB8MA%26ixlib%3Drb-4.1.0%26q%3D85&w=1200&q=75",
+    alt: "woman lying on bed",
+    author: "Innerwell Team",
+    publishDate: "2025-08-15",
+    wordCount: "N/A"
+  },
+  // More articles (August 12, 2025)
   {
     title: "What Is Emotional Safety and How Emotional Boundaries Protect Your Well-Being",
     slug: "emotional-safety-boundaries",
