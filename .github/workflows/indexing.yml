@@ -15,11 +15,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - name: Install deps (innerwell-reflections)
-        working-directory: innerwell-reflections
+      - name: Install deps (innerwell-blog)
+        working-directory: /
         run: npm ci || npm i
       - name: Run indexing check (with optional CSE)
-        working-directory: innerwell-reflections
+        working-directory: /
         env:
           GOOGLE_CSE_API_KEY: ${{ secrets.GOOGLE_CSE_API_KEY }}
           GOOGLE_CSE_CX: ${{ secrets.GOOGLE_CSE_CX }}
