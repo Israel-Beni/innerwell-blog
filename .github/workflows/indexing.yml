@@ -28,11 +28,11 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: indexing-status
-          path: innerwell-reflections/public/indexing-status.json
+          path: public/indexing-status.json
       - name: Upload logs
         uses: actions/upload-artifact@v4
         with:
           name: indexing-logs
-          path: innerwell-reflections/logs/
+          path: logs/
 
 
