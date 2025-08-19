@@ -2,28 +2,35 @@ name: Daily Indexing Check
 
 on:
   schedule:
-    # 8am PT. PT is UTC-8 in winter, UTC-7 in summer.
-    - cron: '0 16 * * *' # 8am PT during DST (UTC-7)
-    - cron: '0 17 * * *' # 9am UTC covers 8am PT in winter (UTC-8)
+    - cron: "*/5 * * * *" # every 5 minutes (testing)
   workflow_dispatch:
+
+concurrency:
+  group: indexing-check
+  cancel-in-progress: false
 
 jobs:
   check:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: /
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - name: Install deps (innerwell-blog)
-        working-directory: /
-        run: npm ci || npm i
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+      - name: Install deps
+        run: pnpm install
       - name: Run indexing check (with optional CSE)
-        working-directory: /
         env:
           GOOGLE_CSE_API_KEY: ${{ secrets.GOOGLE_CSE_API_KEY }}
           GOOGLE_CSE_CX: ${{ secrets.GOOGLE_CSE_CX }}
-        run: npm run check-indexing
+        run: pnpm run check-indexing
       - name: Upload results
         uses: actions/upload-artifact@v4
         with:
@@ -34,5 +41,3 @@ jobs:
         with:
           name: indexing-logs
           path: logs/
-
-
