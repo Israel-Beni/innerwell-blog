@@ -1,5 +1,25 @@
 [
   {
+    "slug": "neuroplasticity-depression",
+    "url": "https://helloinnerwell.com/reflections/neuroplasticity-depression",
+    "engines": {
+      "google": false,
+      "bing": false
+    },
+    "status": "not-indexed",
+    "checkedAt": "2025-08-25T19:32:16.938Z"
+  },
+  {
+    "slug": "how-to-heal-attachment-issues",
+    "url": "https://helloinnerwell.com/reflections/how-to-heal-attachment-issues",
+    "engines": {
+      "google": false,
+      "bing": false
+    },
+    "status": "not-indexed",
+    "checkedAt": "2025-08-25T19:32:17.952Z"
+  },
+  {
     "slug": "online-therapy-for-veterans",
     "url": "https://helloinnerwell.com/reflections/online-therapy-for-veterans",
     "engines": {
@@ -7,7 +27,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:20.275Z"
+    "checkedAt": "2025-08-25T19:32:19.060Z"
   },
   {
     "slug": "psychedelic-therapy-for-anxiety",
@@ -17,7 +37,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:20.809Z"
+    "checkedAt": "2025-08-25T19:32:20.319Z"
   },
   {
     "slug": "ketamine-therapy-for-trauma",
@@ -27,7 +47,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:21.340Z"
+    "checkedAt": "2025-08-25T19:32:21.098Z"
   },
   {
     "slug": "emdr-therapy-for-insomnia",
@@ -37,7 +57,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:21.866Z"
+    "checkedAt": "2025-08-25T19:32:22.031Z"
   },
   {
     "slug": "emotional-safety-boundaries",
@@ -47,7 +67,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:22.405Z"
+    "checkedAt": "2025-08-25T19:32:23.030Z"
   },
   {
     "slug": "oral-ketamine-for-depression",
@@ -57,97 +77,97 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:22.957Z"
+    "checkedAt": "2025-08-25T19:32:23.880Z"
   },
   {
     "slug": "how-to-work-on-yourself-in-a-relationship",
     "url": "https://helloinnerwell.com/reflections/how-to-work-on-yourself-in-a-relationship",
     "engines": {
-      "google": true,
+      "google": false,
       "bing": false
     },
-    "status": "complete",
-    "checkedAt": "2025-08-19T16:30:23.522Z"
+    "status": "not-indexed",
+    "checkedAt": "2025-08-25T19:32:24.731Z"
   },
   {
     "slug": "body-image-struggles-and-mental-health",
     "url": "https://helloinnerwell.com/reflections/body-image-struggles-and-mental-health",
     "engines": {
-      "google": true,
+      "google": false,
       "bing": false
     },
-    "status": "complete",
-    "checkedAt": "2025-08-19T16:30:24.108Z"
+    "status": "not-indexed",
+    "checkedAt": "2025-08-25T19:32:25.816Z"
   },
   {
     "slug": "is-online-therapy-as-effective-as-in-person",
     "url": "https://helloinnerwell.com/reflections/is-online-therapy-as-effective-as-in-person",
     "engines": {
-      "google": true,
+      "google": false,
       "bing": false
     },
-    "status": "complete",
-    "checkedAt": "2025-08-19T16:30:24.731Z"
+    "status": "not-indexed",
+    "checkedAt": "2025-08-25T19:32:26.542Z"
   },
   {
     "slug": "emotional-exhaustion",
     "url": "https://helloinnerwell.com/reflections/emotional-exhaustion",
     "engines": {
-      "google": true,
+      "google": false,
       "bing": false
     },
-    "status": "complete",
-    "checkedAt": "2025-08-19T16:30:25.338Z"
+    "status": "not-indexed",
+    "checkedAt": "2025-08-25T19:32:27.336Z"
   },
   {
     "slug": "fear-of-happiness",
     "url": "https://helloinnerwell.com/reflections/fear-of-happiness",
     "engines": {
-      "google": true,
+      "google": false,
       "bing": false
     },
-    "status": "complete",
-    "checkedAt": "2025-08-19T16:30:25.916Z"
+    "status": "not-indexed",
+    "checkedAt": "2025-08-25T19:32:28.419Z"
   },
   {
     "slug": "emotional-awareness",
     "url": "https://helloinnerwell.com/reflections/emotional-awareness",
     "engines": {
-      "google": true,
+      "google": false,
       "bing": false
     },
-    "status": "complete",
-    "checkedAt": "2025-08-19T16:30:26.569Z"
+    "status": "not-indexed",
+    "checkedAt": "2025-08-25T19:32:29.997Z"
   },
   {
     "slug": "political-anxiety",
     "url": "https://helloinnerwell.com/reflections/political-anxiety",
     "engines": {
-      "google": true,
+      "google": false,
       "bing": false
     },
-    "status": "complete",
-    "checkedAt": "2025-08-19T16:30:27.090Z"
+    "status": "not-indexed",
+    "checkedAt": "2025-08-25T19:32:30.670Z"
   },
   {
     "slug": "high-functioniong-anxiety",
     "url": "https://helloinnerwell.com/reflections/high-functioniong-anxiety",
     "engines": {
-      "google": true,
+      "google": false,
       "bing": false
     },
-    "status": "complete",
-    "checkedAt": "2025-08-19T16:30:27.646Z"
+    "status": "not-indexed",
+    "checkedAt": "2025-08-25T19:32:31.678Z"
   },
   {
     "slug": "emotional-regulation-skills",
     "url": "https://helloinnerwell.com/reflections/emotional-regulation-skills",
     "engines": {
-      "google": true,
+      "google": false,
       "bing": false
     },
-    "status": "complete",
-    "checkedAt": "2025-08-19T16:30:28.243Z"
+    "status": "not-indexed",
+    "checkedAt": "2025-08-25T19:32:32.561Z"
   },
   {
     "slug": "can-you-get-seasonal-depression-in-the-summer",
@@ -157,7 +177,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:28.831Z"
+    "checkedAt": "2025-08-25T19:32:33.254Z"
   },
   {
     "slug": "couples-therapy-vs-individual-therapy",
@@ -167,27 +187,27 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:29.254Z"
+    "checkedAt": "2025-08-25T19:32:34.130Z"
   },
   {
     "slug": "can-stress-and-anxiety-cause-body-aches",
     "url": "https://helloinnerwell.com/reflections/can-stress-and-anxiety-cause-body-aches",
     "engines": {
-      "google": true,
+      "google": false,
       "bing": false
     },
-    "status": "complete",
-    "checkedAt": "2025-08-19T16:30:29.945Z"
+    "status": "not-indexed",
+    "checkedAt": "2025-08-25T19:32:35.042Z"
   },
   {
     "slug": "hidden-impact-of-chronic-pain",
     "url": "https://helloinnerwell.com/reflections/hidden-impact-of-chronic-pain",
     "engines": {
-      "google": true,
+      "google": false,
       "bing": false
     },
-    "status": "complete",
-    "checkedAt": "2025-08-19T16:30:30.679Z"
+    "status": "not-indexed",
+    "checkedAt": "2025-08-25T19:32:35.977Z"
   },
   {
     "slug": "mental-health-stigma",
@@ -197,7 +217,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:31.072Z"
+    "checkedAt": "2025-08-25T19:32:36.787Z"
   },
   {
     "slug": "emotional-numbness",
@@ -207,7 +227,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:31.481Z"
+    "checkedAt": "2025-08-25T19:32:37.763Z"
   },
   {
     "slug": "ketamine-therapy-for-anxiety",
@@ -217,17 +237,17 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:31.887Z"
+    "checkedAt": "2025-08-25T19:32:38.879Z"
   },
   {
     "slug": "finding-support-online-therapy-for-trauma",
     "url": "https://helloinnerwell.com/reflections/finding-support-online-therapy-for-trauma",
     "engines": {
-      "google": true,
+      "google": false,
       "bing": false
     },
-    "status": "complete",
-    "checkedAt": "2025-08-19T16:30:32.499Z"
+    "status": "not-indexed",
+    "checkedAt": "2025-08-25T19:32:40.579Z"
   },
   {
     "slug": "veterans-psychedelic-therapy-healing-our-heroes",
@@ -237,7 +257,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:32.910Z"
+    "checkedAt": "2025-08-25T19:32:41.864Z"
   },
   {
     "slug": "finding-relief-online-therapy-for-anxiety",
@@ -247,7 +267,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:33.320Z"
+    "checkedAt": "2025-08-25T19:32:42.787Z"
   },
   {
     "slug": "finding-relief-online-therapy-for-obsessive-compulsive-disorder",
@@ -257,7 +277,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:33.726Z"
+    "checkedAt": "2025-08-25T19:32:43.769Z"
   },
   {
     "slug": "emdr-therapy-for-ptsd-in-veterans-healing-the-invisible-wounds",
@@ -267,7 +287,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:34.206Z"
+    "checkedAt": "2025-08-25T19:32:44.646Z"
   },
   {
     "slug": "healing-ptsd-with-psychedelic-therapy-for-ptsd",
@@ -277,7 +297,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:34.659Z"
+    "checkedAt": "2025-08-25T19:32:45.641Z"
   },
   {
     "slug": "finding-freedom-online-therapy-for-agoraphobia",
@@ -287,7 +307,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:35.058Z"
+    "checkedAt": "2025-08-25T19:32:46.581Z"
   },
   {
     "slug": "healing-social-anxiety-with-ketamine-therapy",
@@ -297,7 +317,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:35.475Z"
+    "checkedAt": "2025-08-25T19:32:47.566Z"
   },
   {
     "slug": "what-is-psychedelic-integration-therapy",
@@ -307,7 +327,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:35.875Z"
+    "checkedAt": "2025-08-25T19:32:48.693Z"
   },
   {
     "slug": "what-is-ketamine-therapy",
@@ -317,7 +337,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:36.247Z"
+    "checkedAt": "2025-08-25T19:32:49.648Z"
   },
   {
     "slug": "what-is-psychiatric-therapy",
@@ -327,7 +347,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:36.643Z"
+    "checkedAt": "2025-08-25T19:32:50.411Z"
   },
   {
     "slug": "what-is-emdr-therapy",
@@ -337,7 +357,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:37.024Z"
+    "checkedAt": "2025-08-25T19:32:51.925Z"
   },
   {
     "slug": "how-to-stop-anxiety-attack-in-the-heat-of-summer",
@@ -347,7 +367,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:37.445Z"
+    "checkedAt": "2025-08-25T19:32:52.889Z"
   },
   {
     "slug": "what-is-talk-therapy",
@@ -357,7 +377,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:37.828Z"
+    "checkedAt": "2025-08-25T19:32:56.078Z"
   },
   {
     "slug": "summer-mental-health",
@@ -367,7 +387,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:38.223Z"
+    "checkedAt": "2025-08-25T19:32:56.924Z"
   },
   {
     "slug": "what-does-edmr-therapy-do",
@@ -377,7 +397,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:38.592Z"
+    "checkedAt": "2025-08-25T19:32:58.086Z"
   },
   {
     "slug": "benefits-of-emdr-therapy",
@@ -387,7 +407,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:39.005Z"
+    "checkedAt": "2025-08-25T19:32:59.138Z"
   },
   {
     "slug": "how-does-emdr-work",
@@ -397,7 +417,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:39.406Z"
+    "checkedAt": "2025-08-25T19:33:00.242Z"
   },
   {
     "slug": "end-of-school-emotions",
@@ -407,7 +427,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:39.814Z"
+    "checkedAt": "2025-08-25T19:33:01.349Z"
   },
   {
     "slug": "emdr-therapy-for-anxiety-and-depression",
@@ -417,7 +437,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:40.240Z"
+    "checkedAt": "2025-08-25T19:33:02.265Z"
   },
   {
     "slug": "emdr-therapy-for-grief",
@@ -427,7 +447,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:40.638Z"
+    "checkedAt": "2025-08-25T19:33:03.182Z"
   },
   {
     "slug": "ketamine-therapy-for-veterans",
@@ -437,7 +457,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:41.039Z"
+    "checkedAt": "2025-08-25T19:33:04.193Z"
   },
   {
     "slug": "psychedelic-therapy-for-trauma",
@@ -447,7 +467,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:41.441Z"
+    "checkedAt": "2025-08-25T19:33:05.023Z"
   },
   {
     "slug": "ketamine-therapy-for-childhood-trauma",
@@ -457,7 +477,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:41.849Z"
+    "checkedAt": "2025-08-25T19:33:06.178Z"
   },
   {
     "slug": "psychedelic-therapy-for-bipolar",
@@ -467,7 +487,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:42.276Z"
+    "checkedAt": "2025-08-25T19:33:07.378Z"
   },
   {
     "slug": "science-behind-ketamine-therapy",
@@ -477,7 +497,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:42.689Z"
+    "checkedAt": "2025-08-25T19:33:08.260Z"
   },
   {
     "slug": "ketamine-therapy-for-ptsd",
@@ -487,7 +507,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:43.139Z"
+    "checkedAt": "2025-08-25T19:33:09.275Z"
   },
   {
     "slug": "talk-therapy-for-depression",
@@ -497,7 +517,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:43.535Z"
+    "checkedAt": "2025-08-25T19:33:10.266Z"
   },
   {
     "slug": "ketamine-therapy-for-ocd",
@@ -507,7 +527,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:43.978Z"
+    "checkedAt": "2025-08-25T19:33:11.196Z"
   },
   {
     "slug": "ketamine-therapy-for-pain-management",
@@ -517,7 +537,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:44.397Z"
+    "checkedAt": "2025-08-25T19:33:12.145Z"
   },
   {
     "slug": "understanding-treatment-resistant-depression",
@@ -527,7 +547,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:44.823Z"
+    "checkedAt": "2025-08-25T19:33:12.822Z"
   },
   {
     "slug": "ketamine-therapy-for-chronic-pain",
@@ -537,7 +557,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:45.226Z"
+    "checkedAt": "2025-08-25T19:33:13.968Z"
   },
   {
     "slug": "ketamine-therapy-for-anxiety-and-depression",
@@ -547,7 +567,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:45.656Z"
+    "checkedAt": "2025-08-25T19:33:14.932Z"
   },
   {
     "slug": "ketamine-therapy-for-couples",
@@ -557,7 +577,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:46.057Z"
+    "checkedAt": "2025-08-25T19:33:15.780Z"
   },
   {
     "slug": "understanding-autism-adhd",
@@ -567,7 +587,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:46.461Z"
+    "checkedAt": "2025-08-25T19:33:16.605Z"
   },
   {
     "slug": "emdr-therapy-for-family-trauma",
@@ -577,7 +597,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:46.870Z"
+    "checkedAt": "2025-08-25T19:33:17.402Z"
   },
   {
     "slug": "talk-therapy-for-narcissistic-personality-disorder",
@@ -587,7 +607,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:47.418Z"
+    "checkedAt": "2025-08-25T19:33:18.163Z"
   },
   {
     "slug": "mental-health-statistics",
@@ -597,7 +617,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:47.832Z"
+    "checkedAt": "2025-08-25T19:33:18.905Z"
   },
   {
     "slug": "emdr-therapy-for-abandonment-issues",
@@ -607,7 +627,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:48.293Z"
+    "checkedAt": "2025-08-25T19:33:19.837Z"
   },
   {
     "slug": "how-to-find-a-sitter",
@@ -617,7 +637,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:48.719Z"
+    "checkedAt": "2025-08-25T19:33:20.560Z"
   },
   {
     "slug": "ben-medrano-blog-post",
@@ -627,7 +647,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:49.141Z"
+    "checkedAt": "2025-08-25T19:33:21.531Z"
   },
   {
     "slug": "ketamine-integration-guide",
@@ -637,7 +657,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:49.585Z"
+    "checkedAt": "2025-08-25T19:33:22.293Z"
   },
   {
     "slug": "ketamine-integration-exercises",
@@ -647,7 +667,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:49.989Z"
+    "checkedAt": "2025-08-25T19:33:23.154Z"
   },
   {
     "slug": "will-ketamine-show-up-on-my-drug-test",
@@ -657,7 +677,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:50.408Z"
+    "checkedAt": "2025-08-25T19:33:23.926Z"
   },
   {
     "slug": "what-to-know-nervous-ketamine-experience",
@@ -667,7 +687,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:50.841Z"
+    "checkedAt": "2025-08-25T19:33:24.904Z"
   },
   {
     "slug": "how-we-keep-you-safe-at-innerwell",
@@ -677,7 +697,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:51.241Z"
+    "checkedAt": "2025-08-25T19:33:25.863Z"
   },
   {
     "slug": "in-memoriam-dr.-garrett-deckel",
@@ -687,7 +707,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:51.648Z"
+    "checkedAt": "2025-08-25T19:33:26.657Z"
   },
   {
     "slug": "innerwell-reviews",
@@ -697,7 +717,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:52.056Z"
+    "checkedAt": "2025-08-25T19:33:27.514Z"
   },
   {
     "slug": "135-intention-setting-examples-for-ketamine-therapy",
@@ -707,7 +727,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:52.482Z"
+    "checkedAt": "2025-08-25T19:33:28.629Z"
   },
   {
     "slug": "online-ketamine-therapy-101",
@@ -717,7 +737,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:52.902Z"
+    "checkedAt": "2025-08-25T19:33:29.432Z"
   },
   {
     "slug": "ketamine-intention-setting",
@@ -727,7 +747,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:53.325Z"
+    "checkedAt": "2025-08-25T19:33:30.148Z"
   },
   {
     "slug": "benefits-of-at-home-ketamine-therapy-vs-in-person",
@@ -737,7 +757,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:53.757Z"
+    "checkedAt": "2025-08-25T19:33:30.980Z"
   },
   {
     "slug": "low-cost-ketamine-treatment",
@@ -747,7 +767,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:54.159Z"
+    "checkedAt": "2025-08-25T19:33:32.011Z"
   },
   {
     "slug": "how-to-prepare-for-ketamine-experience",
@@ -757,7 +777,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:54.574Z"
+    "checkedAt": "2025-08-25T19:33:32.954Z"
   },
   {
     "slug": "how-do-i-interact-with-my-therapist",
@@ -767,7 +787,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:54.976Z"
+    "checkedAt": "2025-08-25T19:33:33.702Z"
   },
   {
     "slug": "dispelling-stigma-psychedelics",
@@ -777,7 +797,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:55.374Z"
+    "checkedAt": "2025-08-25T19:33:34.785Z"
   },
   {
     "slug": "ketamine-for-anxiety",
@@ -787,7 +807,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:55.775Z"
+    "checkedAt": "2025-08-25T19:33:35.702Z"
   },
   {
     "slug": "post-session-care",
@@ -797,7 +817,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:56.159Z"
+    "checkedAt": "2025-08-25T19:33:36.441Z"
   },
   {
     "slug": "role-of-a-sitter",
@@ -807,7 +827,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:56.546Z"
+    "checkedAt": "2025-08-25T19:33:37.485Z"
   },
   {
     "slug": "ketamine-101",
@@ -817,7 +837,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:56.939Z"
+    "checkedAt": "2025-08-25T19:33:38.274Z"
   },
   {
     "slug": "what-to-consider-psychedelic-therapy",
@@ -827,7 +847,7 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:57.316Z"
+    "checkedAt": "2025-08-25T19:33:39.159Z"
   },
   {
     "slug": "meet-innerwell",
@@ -837,6 +857,6 @@
       "bing": false
     },
     "status": "not-indexed",
-    "checkedAt": "2025-08-19T16:30:57.716Z"
+    "checkedAt": "2025-08-25T19:33:39.989Z"
   }
 ]

@@ -7,7 +7,29 @@ import { ReflectionData } from '@/types/reflection';
 import "./globals.css";
 
 const reflectionData: ReflectionData[] = [
-  // Latest articles (August 15, 2025) 
+
+  // latest articles (August 25, 2025)
+  
+{
+  title: "The Future of Depression Treatment Isn’t a Pill—It’s Neuroplasticity",
+  slug: "neuroplasticity-depression",
+  imageUrl: "https://images.unsplash.com/photo-1664447972779-316251bd8bd7?dpr=1&fit=max&auto=compress%2Cformat",
+  alt: "background pattern",
+  author: "Innerwell Team",
+  publishDate: "2025-08-25",
+  wordCount: "N/A"    
+},
+{
+  title: "Healing Attachment Issues: Steps to a More Secure, Resilient You",
+  slug: "how-to-heal-attachment-issues",
+  imageUrl: "https://images.unsplash.com/photo-1519686848819-af8eaff13a7f?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw0fHxsZXR0aW5nJTIwZ298ZW58MHx8fHwxNzU2MTQ3MTY4fDA%26ixlib%3Drb-4.1.0%26q%3D85&w=1200&q=75",
+  alt: "person reaching train railways between trees",
+  author: "Innerwell Team",
+  publishDate: "2025-08-25",
+  wordCount: "N/A"
+},
+
+  // page 1 (August 15, 2025) 
   {
     title: "Online Therapy for Veterans: Supporting Those Who Served",
     slug: "online-therapy-for-veterans",
